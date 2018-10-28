@@ -1,6 +1,11 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Kotlin - Unit tests" type="GradleRunConfiguration" factoryName="Gradle">
     <ExternalSystemSettings>
+      <option name="env">
+        <map>
+          <entry key="JAVA_PATH" value="C:\Program Files\Java\jdk-11.0.1\bin\javac;" />
+        </map>
+      </option>
       <option name="executionName" />
       <option name="externalProjectPath" value="$PROJECT_DIR$/kotlin-source" />
       <option name="externalSystemIdString" value="GRADLE" />
@@ -16,6 +21,6 @@
       </option>
       <option name="vmOptions" value="" />
     </ExternalSystemSettings>
-    <method />
+    <method v="2" />
   </configuration>
 </component>
