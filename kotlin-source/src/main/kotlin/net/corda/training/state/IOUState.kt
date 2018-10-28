@@ -2,7 +2,9 @@ package net.corda.training.state
 
 import net.corda.core.contracts.Amount
 import net.corda.core.contracts.ContractState
+import net.corda.core.identity.AbstractParty
 import net.corda.core.identity.Party
+import net.corda.finance.POUNDS
 import java.util.*
 
 /**
@@ -11,6 +13,15 @@ import java.util.*
  *
  * Remove the "val data: String = "data" property before starting the [IOUState] tasks.
  */
-data class IOUState(val amount: Amount<Currency>): ContractState {
+data class IOUState(val amount: Amount<Currency>,
+                    val lender: Party,
+                    val borrower : Party,
+                    val paid: Amount<Currency> = 0.POUNDS ): ContractState {
     override val participants: List<Party> get() = listOf()
 }
+
+//class IOUState {
+//   // this.lender =
+//
+//}
+
